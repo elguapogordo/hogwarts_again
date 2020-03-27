@@ -1,0 +1,12 @@
+<h3>List of Students</h3>
+<h3><%= @professor.name %></h3>
+<br>
+<section>
+  <% @professor.students.each do |student| %>
+    <div>
+      <p>Name: <%= student.name %></p>
+      <p>Age: <%= student.age %></p>
+      <p>House: <%= student.house %></p>
+    </div>
+  <% end %>
+</section>

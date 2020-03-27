@@ -3,7 +3,7 @@
 <section>
   <% @professors.each do |professor| %>
     <div>
-      <p>Name: <%= professor.name %></p>
+      <p>Name: <%= link_to "#{professor.name}", "/professors/#{professor.id}" %></p>
       <p>Age: <%= professor.age %></p>
       <p>Specialty: <%= professor.specialty %></p>
     </div>
