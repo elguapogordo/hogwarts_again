@@ -1,0 +1,11 @@
+<h3>Professors</h3>
+<br>
+<section>
+  <% @professors.each do |professor| %>
+    <div>
+      <p>Name: <%= professor.name %></p>
+      <p>Age: <%= professor.age %></p>
+      <p>Specialty: <%= professor.specialty %></p>
+    </div>
+  <% end %>
+</section>
